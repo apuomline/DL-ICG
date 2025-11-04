@@ -1,0 +1,9 @@
+# 图像复制工具配置文件
+
+# 必需参数
+csv_file: "./5000_train_A_image_info.csv"
+source_dir: "./webinat5000_train"
+
+# 可选参数
+skip_file: "./drop_imgs_txts/final_5000_drop_imgs.txt"  # 跳过文件列表，如 final_400_drop_imgs.txt
+recursive_search: true  # 是否递归搜索源数据集目录，默认为true

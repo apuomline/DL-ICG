@@ -1,0 +1,26 @@
+# 推理配置
+
+# 数据路径配置
+test_dir: "./data/test/web_5000"
+checkpoint_path: "./train_outputs/exp_5000/best_model.pth"
+output_file: "./inference_results/pred_results_web5000.csv"
+
+# 模型配置
+model_name: "efficientnet_b5"
+num_classes: 400
+image_size: 384
+
+# 推理参数
+batch_size: 32
+use_tta: true
+device: "cuda"
+seed: 42
+
+# 数据预处理
+normalize_mean: [0.485, 0.456, 0.406]
+normalize_std: [0.229, 0.224, 0.225]
+
+# ArcFace参数（必须与训练时一致）
+arcface_s: 30.0
+arcface_m: 0.5
+number_sub_center: 1
